@@ -1,0 +1,15 @@
+{
+  "name": "@theya/tokens",
+  "version": "0.0.1",
+  "description": "Design tokens for the Theya landing-page design system",
+  "main": "build/js/tokens.js",
+  "types": "build/js/tokens.d.ts",
+  "scripts": {
+    "build": "npm run build:light && npm run build:dark",
+    "build:light": "style-dictionary build --config style-dictionary.config.mjs",
+    "build:dark": "style-dictionary build --config style-dictionary.dark.config.mjs"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.4.0"
+  }
+}

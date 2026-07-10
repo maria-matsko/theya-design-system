@@ -1,0 +1,294 @@
+{
+  "size": {
+    "icon": {
+      "icon-xs": {
+        "value": "{size.size12}"
+      },
+      "icon-sm": {
+        "value": "{size.size16}"
+      },
+      "icon-lg": {
+        "value": "{size.size32}"
+      },
+      "icon-md": {
+        "value": "{size.size24}"
+      },
+      "icon-xl": {
+        "value": "{size.size48}"
+      },
+      "icon-2xs": {
+        "value": "{size.size8}"
+      }
+    },
+    "size-control": {
+      "size-control-xs": {
+        "value": "{size.size20}"
+      },
+      "size-control-md": {
+        "value": "{size.size28}"
+      },
+      "size-control-xl": {
+        "value": "{size.size40}"
+      },
+      "size-control-sm": {
+        "value": "{size.size24}"
+      },
+      "size-control-2xs": {
+        "value": "{size.size16}"
+      },
+      "size-control-lg": {
+        "value": "{size.size32}"
+      },
+      "size-control-2xl": {
+        "value": "{size.size48}"
+      },
+      "size-control-3xl": {
+        "value": "{size.size56}"
+      },
+      "size-control-4xl": {
+        "value": "{size.size64}"
+      }
+    },
+    "control": {
+      "control-xs": {
+        "value": "{size.size20}"
+      }
+    },
+    "border-radius": {
+      "border-radius-sm": {
+        "value": "{size.size2}"
+      },
+      "border-radius-md": {
+        "value": "{size.size4}"
+      },
+      "border-radius-lg": {
+        "value": "{size.size6}"
+      },
+      "border-radius-xl": {
+        "value": "{size.size8}"
+      },
+      "border-radius-2xl": {
+        "value": "{size.size16}"
+      },
+      "border-radius-3xl": {
+        "value": "{size.size32}"
+      },
+      "border-radius-max": {
+        "value": "{size.size100}"
+      }
+    },
+    "width": {
+      "width-control-xs": {
+        "value": "{size.size20}"
+      },
+      "width-control-sm": {
+        "value": "{size.size60}"
+      },
+      "width-control-lg": {
+        "value": "{size.size200}"
+      },
+      "width-control-2xl": {
+        "value": "{size.size348}"
+      },
+      "width-control-3xl": {
+        "value": "{size.size500}"
+      },
+      "width-dropdown-sm": {
+        "value": "{size.size152}"
+      },
+      "width-dropdown-md": {
+        "value": "{size.size224}"
+      },
+      "width-form": {
+        "value": "{size.size216}"
+      },
+      "width-notification": {
+        "value": "{size.size400}"
+      },
+      "width-sidebar": {
+        "value": "{size.size224}"
+      },
+      "width-drawer-sm": {
+        "value": "{size.size512}"
+      },
+      "width-drawer-md": {
+        "value": "{size.size640}"
+      },
+      "width-drawer-lg": {
+        "value": "{size.size900}"
+      },
+      "width-drawer-xl": {
+        "value": "{size.size1000}"
+      },
+      "width-control-md": {
+        "value": "{size.size100}"
+      },
+      "width-control-xl": {
+        "value": "{size.size224}"
+      }
+    },
+    "margin": {
+      "margin-2xs": {
+        "value": "{size.size4}"
+      },
+      "margin-xs": {
+        "value": "{size.size8}"
+      },
+      "margin-md": {
+        "value": "{size.size12}"
+      },
+      "margin-lg": {
+        "value": "{size.size16}"
+      },
+      "margin-xl": {
+        "value": "{size.size20}"
+      },
+      "margin-2xl": {
+        "value": "{size.size24}"
+      },
+      "margin-3xl": {
+        "value": "{size.size28}"
+      },
+      "margin-4xl": {
+        "value": "{size.size32}"
+      },
+      "margin-3xs": {
+        "value": "{size.size3}"
+      },
+      "margin-4xs": {
+        "value": "{size.size2}"
+      },
+      "margin-s": {
+        "value": "{size.size10}"
+      }
+    },
+    "padding": {
+      "padding-2xs": {
+        "value": -2
+      },
+      "padding-xs": {
+        "value": "{size.size8}"
+      },
+      "padding-md": {
+        "value": "{size.size12}"
+      },
+      "padding-lg": {
+        "value": "{size.size16}"
+      },
+      "padding-xl": {
+        "value": "{size.size20}"
+      },
+      "padding2xl": {
+        "value": "{size.size24}"
+      },
+      "padding-3xl": {
+        "value": "{size.size28}"
+      },
+      "padding-4xl": {
+        "value": "{size.size32}"
+      },
+      "padding-3xs": {
+        "value": -4
+      },
+      "padding-15xs": {
+        "value": "{size.size6}"
+      },
+      "padding-s": {
+        "value": "{size.size10}"
+      }
+    },
+    "border-width": {
+      "border-width-sm": {
+        "value": "{size.size1}"
+      },
+      "border-width-md": {
+        "value": "{size.size2}"
+      },
+      "border-width-lg": {
+        "value": "{size.size4}"
+      },
+      "border-width-xl": {
+        "value": "{size.size6}"
+      },
+      "border-width-2xl": {
+        "value": "{size.size8}"
+      },
+      "border-width-3xl": {
+        "value": "{size.size12}"
+      }
+    },
+    "size-system": {
+      "page-margin": {
+        "value": 120
+      },
+      "page-gap": {
+        "value": 100
+      },
+      "section-margin": {
+        "value": 60
+      },
+      "section-gap": {
+        "value": 24
+      },
+      "block-margin-m": {
+        "value": 48
+      },
+      "block-margin-s": {
+        "value": 32
+      },
+      "block-gap-xl": {
+        "value": 48
+      },
+      "block-gap-l": {
+        "value": 32
+      },
+      "block-gap-m": {
+        "value": 24
+      },
+      "block-gap-s": {
+        "value": 16
+      },
+      "block-gap-xs": {
+        "value": 12
+      },
+      "block-gap-2xs": {
+        "value": 8
+      }
+    },
+    "gap": {
+      "gap-4xs": {
+        "value": "{size.size2}"
+      },
+      "gap-3xs": {
+        "value": "{size.size3}"
+      },
+      "gap-2xs": {
+        "value": -2
+      },
+      "gap-xs": {
+        "value": "{size.size8}"
+      },
+      "gap-s": {
+        "value": "{size.size10}"
+      },
+      "gap-md": {
+        "value": "{size.size12}"
+      },
+      "gap-lg": {
+        "value": "{size.size16}"
+      },
+      "gap-xl": {
+        "value": "{size.size20}"
+      },
+      "gap-2xl": {
+        "value": "{size.size24}"
+      },
+      "gap-3xl": {
+        "value": "{size.size28}"
+      },
+      "gap-4xl": {
+        "value": "{size.size32}"
+      }
+    }
+  }
+}

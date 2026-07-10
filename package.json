@@ -1,0 +1,9 @@
+{
+  "name": "theya",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Theya — design system for marketing landing pages",
+  "scripts": {
+    "build:tokens": "pnpm --filter @theya/tokens build"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "typography": {
+    "font-family": {
+      "heading": {
+        "value": "Inter"
+      },
+      "body": {
+        "value": "Inter"
+      },
+      "code": {
+        "value": "Inconsolata"
+      }
+    },
+    "weight": {
+      "regular": {
+        "value": "Regular"
+      },
+      "semibold": {
+        "value": "SemiBold"
+      },
+      "medium": {
+        "value": "Medium"
+      },
+      "bold": {
+        "value": "Bold"
+      },
+      "extrabold": {
+        "value": "ExtraBold"
+      },
+      "black": {
+        "value": "Black"
+      },
+      "light": {
+        "value": "Light"
+      },
+      "thin": {
+        "value": "Thin"
+      },
+      "extralight": {
+        "value": "ExtraLight"
+      }
+    },
+    "italic": {
+      "thin-italic": {
+        "value": "Thin Italic"
+      },
+      "extralight-italic": {
+        "value": "ExtraLight Italic"
+      },
+      "light-italic": {
+        "value": "Light Italic"
+      },
+      "italic": {
+        "value": " Italic"
+      },
+      "medium-italic": {
+        "value": "Medium Italic"
+      },
+      "semibold-italic": {
+        "value": "SemiBold Italic"
+      },
+      "bold-italic": {
+        "value": "Bold Italic"
+      },
+      "extrabold-italic": {
+        "value": "ExtraBold Italic"
+      },
+      "black-italic": {
+        "value": "Black Italic"
+      }
+    }
+  }
+}

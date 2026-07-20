@@ -2,183 +2,183 @@
   "size": {
     "size2": {
       "value": 2,
-      "unit": "px"
+      "type": "dimension"
     },
     "size4": {
       "value": 4,
-      "unit": "px"
+      "type": "dimension"
     },
     "size8": {
       "value": 8,
-      "unit": "px"
+      "type": "dimension"
     },
     "size12": {
       "value": 12,
-      "unit": "px"
+      "type": "dimension"
     },
     "size16": {
       "value": 16,
-      "unit": "px"
+      "type": "dimension"
     },
     "size20": {
       "value": 20,
-      "unit": "px"
+      "type": "dimension"
     },
     "size24": {
       "value": 24,
-      "unit": "px"
+      "type": "dimension"
     },
     "size28": {
       "value": 28,
-      "unit": "px"
+      "type": "dimension"
     },
     "size32": {
       "value": 32,
-      "unit": "px"
+      "type": "dimension"
     },
     "size36": {
       "value": 36,
-      "unit": "px"
+      "type": "dimension"
     },
     "size40": {
       "value": 40,
-      "unit": "px"
+      "type": "dimension"
     },
     "size48": {
       "value": 48,
-      "unit": "px"
+      "type": "dimension"
     },
     "size60": {
       "value": 60,
-      "unit": "px"
+      "type": "dimension"
     },
     "size152": {
       "value": 152,
-      "unit": "px"
+      "type": "dimension"
     },
     "size200": {
       "value": 200,
-      "unit": "px"
+      "type": "dimension"
     },
     "size224": {
       "value": 224,
-      "unit": "px"
+      "type": "dimension"
     },
     "size348": {
       "value": 348,
-      "unit": "px"
+      "type": "dimension"
     },
     "size400": {
       "value": 400,
-      "unit": "px"
+      "type": "dimension"
     },
     "size500": {
       "value": 500,
-      "unit": "px"
+      "type": "dimension"
     },
     "size512": {
       "value": 512,
-      "unit": "px"
+      "type": "dimension"
     },
     "size640": {
       "value": 640,
-      "unit": "px"
+      "type": "dimension"
     },
     "size900": {
       "value": 900,
-      "unit": "px"
+      "type": "dimension"
     },
     "size1000": {
       "value": 1000,
-      "unit": "px"
+      "type": "dimension"
     },
     "size216": {
       "value": 216,
-      "unit": "px"
+      "type": "dimension"
     },
     "size56": {
       "value": 56,
-      "unit": "px"
+      "type": "dimension"
     },
     "size100": {
       "value": 100,
-      "unit": "px"
+      "type": "dimension"
     },
     "size14": {
       "value": 14,
-      "unit": "px"
+      "type": "dimension"
     },
     "size26": {
       "value": 26,
-      "unit": "px"
+      "type": "dimension"
     },
     "size6": {
       "value": 6,
-      "unit": "px"
+      "type": "dimension"
     },
     "size30": {
       "value": 30,
-      "unit": "px"
+      "type": "dimension"
     },
     "size22": {
       "value": 22,
-      "unit": "px"
+      "type": "dimension"
     },
     "size3": {
       "value": 3,
-      "unit": "px"
+      "type": "dimension"
     },
     "size1": {
       "value": 1,
-      "unit": "px"
+      "type": "dimension"
     },
     "size120": {
       "value": 120,
-      "unit": "px"
+      "type": "dimension"
     },
     "size72": {
       "value": 72,
-      "unit": "px"
+      "type": "dimension"
     },
     "size80": {
       "value": 80,
-      "unit": "px"
+      "type": "dimension"
     },
     "size92": {
       "value": 92,
-      "unit": "px"
+      "type": "dimension"
     },
     "size112": {
       "value": 112,
-      "unit": "px"
+      "type": "dimension"
     },
     "size132": {
       "value": 132,
-      "unit": "px"
+      "type": "dimension"
     },
     "size0": {
       "value": 0,
-      "unit": "px"
+      "type": "dimension"
     },
     "size0-5": {
       "value": 0.5,
-      "unit": "px"
+      "type": "dimension"
     },
     "size10": {
       "value": 10,
-      "unit": "px"
+      "type": "dimension"
     },
     "size11": {
       "value": 11,
-      "unit": "px"
+      "type": "dimension"
     },
     "size64": {
       "value": 64,
-      "unit": "px"
+      "type": "dimension"
     },
     "size1-2": {
       "value": 1.2000000476837158,
-      "unit": "px"
+      "type": "dimension"
     }
   }
 }

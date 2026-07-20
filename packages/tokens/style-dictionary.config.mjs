@@ -12,7 +12,17 @@ export default {
   source: [...commonSource, 'src/semantic/color.default.json'],
   platforms: {
     css: {
-      transformGroup: 'css',
+      transforms: [
+        'attribute/cti',
+        'name/kebab',
+        'time/seconds',
+        'html/icon',
+        'size/px',
+        'color/css',
+        'asset/url',
+        'fontFamily/css',
+        'cubicBezier/css',
+      ],
       buildPath: 'build/css/',
       files: [
         {

@@ -2,10 +2,10 @@
   "typography": {
     "font-family": {
       "heading": {
-        "value": "Inter"
+        "value": "Clash Grotesk"
       },
       "body": {
-        "value": "Inter"
+        "value": "Clash Grotesk"
       },
       "code": {
         "value": "Inconsolata"
@@ -13,31 +13,31 @@
     },
     "weight": {
       "regular": {
-        "value": "Regular"
+        "value": "400"
       },
       "semibold": {
-        "value": "SemiBold"
+        "value": "600"
       },
       "medium": {
-        "value": "Medium"
+        "value": "500"
       },
       "bold": {
-        "value": "Bold"
+        "value": "700"
       },
       "extrabold": {
-        "value": "ExtraBold"
+        "value": "800"
       },
       "black": {
-        "value": "Black"
+        "value": "900"
       },
       "light": {
-        "value": "Light"
+        "value": "300"
       },
       "thin": {
-        "value": "Thin"
+        "value": "100"
       },
       "extralight": {
-        "value": "ExtraLight"
+        "value": "200"
       }
     },
     "italic": {

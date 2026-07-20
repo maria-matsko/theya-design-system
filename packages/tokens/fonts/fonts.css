@@ -1,0 +1,19 @@
+/*
+  Clash Grotesk — Indian Type Foundry, via Fontshare (free, self-hosted).
+  See ./clash-grotesk/LICENSE.txt for the full license.
+
+  Using the variable font means one file covers every weight our
+  typography tokens use (200/400/500/600/700), instead of loading five
+  separate static files.
+*/
+@font-face {
+  font-family: 'Clash Grotesk';
+  src:
+    url('./clash-grotesk/ClashGrotesk-Variable.woff2') format('woff2-variations'),
+    url('./clash-grotesk/ClashGrotesk-Variable.woff2') format('woff2'),
+    url('./clash-grotesk/ClashGrotesk-Variable.woff') format('woff'),
+    url('./clash-grotesk/ClashGrotesk-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}

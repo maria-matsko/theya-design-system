@@ -1,0 +1,201 @@
+.toast {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-size4); /* 4px */
+  width: var(--size-width-width-notification); /* 400px */
+  padding: var(--size-padding-padding-lg) var(--size-padding-padding-md) var(--size-padding-padding-lg) var(--size-padding-padding-lg);
+  border-radius: var(--size-border-radius-border-radius-xl); /* 8px */
+  overflow: hidden;
+}
+
+.intent-accent {
+  background-color: var(--color-bg-primary-bg-primary-subtle);
+}
+.intent-progress,
+.intent-success,
+.intent-error,
+.intent-warning,
+.intent-info {
+  background-color: var(--color-bg-surface-bg-surface-overlay-dark);
+}
+
+.titleRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  width: 100%;
+}
+
+.icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: var(--color-icon-icon-info);
+}
+.intent-success .icon {
+  color: var(--color-icon-icon-success);
+}
+.intent-error .icon {
+  color: var(--color-icon-icon-danger);
+}
+.intent-warning .icon {
+  color: var(--color-icon-icon-warning);
+}
+.intent-accent .icon {
+  color: var(--color-icon-icon-success);
+}
+
+.dotIcon {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  margin: 6px 4px;
+  border-radius: 9999px;
+  background-color: var(--color-icon-icon-info);
+}
+
+.title {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-family: var(--typography-heading-heading-xs-font);
+  font-weight: var(--typography-weight-medium); /* 500 — weights ≥500 get 0.5px tracking, per DS standard (was bold/700) */
+  font-size: var(--typography-heading-heading-xs-size);
+  line-height: var(--typography-heading-heading-xs-line-height);
+  letter-spacing: 0.5px;
+  color: var(--color-text-text-on-dark);
+}
+.intent-accent .title {
+  color: var(--color-text-text);
+}
+.intent-success .title {
+  color: var(--color-text-text-subtle-on-dark);
+}
+
+.closeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  border: none;
+  background: none;
+  border-radius: var(--size-border-radius-border-radius-sm); /* 2px */
+  color: var(--color-icon-icon-on-dark);
+  cursor: pointer;
+  transition: opacity 120ms ease;
+}
+.intent-accent .closeButton {
+  color: var(--color-text-text-subtle);
+}
+.closeButton:hover {
+  opacity: 0.7;
+}
+
+/* ---------- progress ---------- */
+.progressBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 22px;
+  padding-right: 4px;
+  width: 100%;
+}
+
+.progressRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
+}
+.progressLabel {
+  flex: 1;
+  min-width: 0;
+  font-weight: var(--typography-weight-medium);
+  color: var(--color-text-text-link-on-dark);
+}
+.progressPercent {
+  color: var(--color-text-text-subtle-on-dark);
+  white-space: nowrap;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 2px;
+  border-radius: var(--size-border-radius-border-radius-md);
+  background-color: var(--color-bg-neutral-bg-neutral);
+  overflow: hidden;
+}
+.progressFill {
+  height: 100%;
+  border-radius: var(--size-border-radius-border-radius-md);
+  background-color: var(--color-bg-info-bg-info-subtle);
+  transition: width 200ms ease;
+}
+
+/* ---------- description ---------- */
+.description {
+  width: 100%;
+  padding-left: 22px;
+}
+.descriptionText {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-text-text-on-dark);
+}
+.intent-accent .descriptionText {
+  color: var(--color-text-text-subtle);
+}
+
+.learnMore {
+  font-weight: var(--typography-weight-semibold);
+  color: var(--color-text-text-link-on-dark);
+  text-decoration: none;
+}
+.intent-accent .learnMore {
+  color: var(--color-text-text-link);
+}
+.learnMore:hover {
+  text-decoration: underline;
+}
+
+/* ---------- stack container ---------- */
+.stack {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1000;
+  pointer-events: none;
+}
+.stack > * {
+  pointer-events: auto;
+}
+
+.position-top-right {
+  top: 16px;
+  right: 16px;
+  align-items: flex-end;
+}
+.position-top-left {
+  top: 16px;
+  left: 16px;
+  align-items: flex-start;
+}
+.position-bottom-right {
+  bottom: 16px;
+  right: 16px;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+}
+.position-bottom-left {
+  bottom: 16px;
+  left: 16px;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+}

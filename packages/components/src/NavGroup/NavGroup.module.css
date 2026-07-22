@@ -1,0 +1,38 @@
+.group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--theya-nav-text-subtle, var(--color-text-text-subtler));
+}
+
+.headerLabel {
+  font-family: var(--typography-body-xs-font);
+  font-weight: var(--typography-weight-medium);
+  font-size: var(--typography-body-xs-size);
+  letter-spacing: var(--typography-body-xs-letter-spacing-uppercase, 0.5px);
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.collapsedGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}

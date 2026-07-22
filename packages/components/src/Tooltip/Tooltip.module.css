@@ -1,0 +1,109 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: var(--size-border-radius-border-radius-lg); /* 6px */
+  background-color: var(--color-bg-surface-bg-surface-overlay-dark);
+  color: var(--color-text-text-on-dark);
+  font-family: var(--typography-body-s-font);
+  font-size: var(--typography-body-s-size);
+  line-height: var(--typography-body-s-line-height);
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 2px rgba(0, 0, 0, 0.08),
+    0px 5px 3px rgba(0, 0, 0, 0.05);
+  pointer-events: none;
+  animation: theya-tooltip-fade 100ms ease-out;
+}
+
+@keyframes theya-tooltip-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+}
+
+/* ---------- top / bottom placements ---------- */
+.placement-top {
+  bottom: calc(100% + 8px);
+}
+.placement-bottom {
+  top: calc(100% + 8px);
+}
+.placement-top.align-center,
+.placement-bottom.align-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.placement-top.align-start,
+.placement-bottom.align-start {
+  left: 0;
+}
+.placement-top.align-end,
+.placement-bottom.align-end {
+  right: 0;
+}
+
+.arrow-top {
+  top: 100%;
+  border-top-color: var(--color-bg-surface-bg-surface-overlay-dark);
+  border-bottom: none;
+}
+.arrow-bottom {
+  bottom: 100%;
+  border-bottom-color: var(--color-bg-surface-bg-surface-overlay-dark);
+  border-top: none;
+}
+.arrow-align-center {
+  left: 50%;
+  margin-left: -6px;
+}
+.arrow-align-start {
+  left: 12px;
+}
+.arrow-align-end {
+  right: 12px;
+}
+
+/* ---------- left / right placements ---------- */
+.placement-left {
+  right: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.placement-right {
+  left: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow-left {
+  left: 100%;
+  top: 50%;
+  margin-top: -6px;
+  border-left-color: var(--color-bg-surface-bg-surface-overlay-dark);
+  border-right: none;
+}
+.arrow-right {
+  right: 100%;
+  top: 50%;
+  margin-top: -6px;
+  border-right-color: var(--color-bg-surface-bg-surface-overlay-dark);
+  border-left: none;
+}

@@ -1,0 +1,66 @@
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  box-sizing: border-box;
+}
+
+.status-check {
+  background-color: var(--color-bg-success-bg-success);
+  color: var(--color-icon-icon-on-dark);
+}
+
+.status-exclamation,
+.status-cross {
+  background-color: var(--color-bg-danger-bg-danger);
+  color: var(--color-icon-icon-on-dark);
+}
+
+.status-warning {
+  background-color: var(--color-bg-warning-bg-warning);
+  color: var(--color-icon-icon-on-dark);
+}
+
+.status-progressing {
+  background-color: var(--color-bg-input-bg-input);
+  border: 1px solid var(--color-border-border-primary);
+}
+
+.status-empty {
+  background-color: var(--color-bg-input-bg-input);
+  border: 1px solid var(--color-border-border-subtle);
+}
+
+.status-disable {
+  background-color: var(--color-bg-input-bg-input);
+  border: 1px solid var(--color-border-border-subtler);
+}
+
+.pulseDot {
+  width: 40%;
+  height: 40%;
+  border-radius: 9999px;
+  background-color: var(--color-icon-icon-primary);
+  animation: theya-status-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes theya-status-pulse {
+  0%,
+  100% {
+    transform: scale(0.7);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+}
+
+.staticDot {
+  width: 40%;
+  height: 40%;
+  border-radius: 9999px;
+  background-color: var(--color-icon-icon-subtler);
+}

@@ -1,0 +1,135 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-margin-margin-2xs); /* 4px */
+  padding: 5px var(--size-padding-padding-xs); /* 5px block (no matching token), 8px inline */
+  border-radius: var(--size-border-radius-border-radius-lg); /* 6px, matches Button */
+  font-family: var(--typography-body-xs-font);
+  font-weight: var(--typography-weight-medium); /* 500 — weights ≥500 get 0.5px tracking, matching Button */
+  font-size: var(--typography-body-xs-size);
+  line-height: var(--typography-body-xs-line-height);
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.chip.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.clickable {
+  border: none;
+  font: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+  transition: filter 100ms ease, box-shadow 100ms ease;
+}
+.clickable:hover {
+  filter: brightness(0.96);
+}
+.clickable:active {
+  filter: brightness(0.9);
+}
+.clickable:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-focus-focus-ring);
+}
+.type-outlined.clickable:hover {
+  filter: none;
+  background-color: var(--color-bg-secondary-bg-secondary-subtle-hover);
+}
+.type-outlined.clickable:active {
+  filter: none;
+  background-color: var(--color-bg-secondary-bg-secondary-subtle-pressed);
+}
+
+.icon,
+.close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.close {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  border-radius: 9999px;
+  transition: opacity 120ms ease;
+}
+.close:hover {
+  opacity: 0.7;
+}
+
+/* ---------- filled ---------- */
+.type-filled.intent-inactive {
+  background-color: var(--color-bg-neutral-bg-neutral);
+  color: var(--color-text-text-on-dark);
+}
+.type-filled.intent-info {
+  background-color: var(--color-bg-info-bg-info);
+  color: var(--color-text-text-on-dark);
+}
+.type-filled.intent-success {
+  background-color: var(--color-bg-success-bg-success);
+  color: var(--color-text-text-on-dark);
+}
+.type-filled.intent-warning {
+  background-color: var(--color-bg-warning-bg-warning);
+  color: var(--color-text-text-on-dark);
+}
+.type-filled.intent-danger {
+  background-color: var(--color-bg-danger-bg-danger);
+  color: var(--color-text-text-on-dark);
+}
+
+/* ---------- tonal ---------- */
+.type-tonal.intent-inactive {
+  background-color: var(--color-bg-neutral-bg-neutral-subtle);
+  color: var(--color-text-text);
+}
+.type-tonal.intent-info {
+  background-color: var(--color-bg-info-bg-info-subtle);
+  color: var(--color-text-text-info);
+}
+.type-tonal.intent-success {
+  background-color: var(--color-bg-success-bg-success-subtle);
+  color: var(--color-text-text-success);
+}
+.type-tonal.intent-warning {
+  background-color: var(--color-bg-warning-bg-warning-subtle);
+  color: var(--color-text-text-warning);
+}
+.type-tonal.intent-danger {
+  background-color: var(--color-bg-danger-bg-danger-subtle);
+  color: var(--color-text-text-danger);
+}
+
+/* ---------- outlined ---------- */
+.type-outlined {
+  background-color: transparent;
+  border: 1px solid;
+}
+.type-outlined.intent-inactive {
+  border-color: var(--color-border-border);
+  color: var(--color-text-text);
+}
+.type-outlined.intent-info {
+  border-color: var(--color-border-border-info);
+  color: var(--color-text-text-info);
+}
+.type-outlined.intent-success {
+  border-color: var(--color-border-border-success);
+  color: var(--color-text-text-success);
+}
+.type-outlined.intent-warning {
+  border-color: var(--color-border-border-warning);
+  color: var(--color-text-text-warning);
+}
+.type-outlined.intent-danger {
+  border-color: var(--color-border-border-danger);
+  color: var(--color-text-text-danger);
+}

@@ -4,3 +4,5 @@ allowBuilds:
   '@bundled-es-modules/glob': true
   esbuild: true
   style-dictionary: true
+minimumReleaseAgeExclude:
+  - recharts@3.10.0

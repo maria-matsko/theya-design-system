@@ -362,3 +362,48 @@
 .type-ghost.intent-secondary:active:not(:disabled) {
   background-color: var(--color-bg-secondary-bg-secondary-subtle-pressed);
 }
+
+/* ---------- gradient variant ----------
+   Uses the dark-theme gradient token (--color-gradient-gradient-primary),
+   only meaningful when data-theme="dark" is active (see ThemeProvider). */
+.variant-gradient.type-filled {
+  background-color: transparent;
+  background-image: var(--color-gradient-gradient-primary);
+  border-color: transparent;
+  color: var(--color-text-text-on-dark);
+}
+.variant-gradient.type-filled .icon {
+  color: var(--color-icon-icon-on-dark);
+}
+.variant-gradient.type-filled:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+.variant-gradient.type-filled:active:not(:disabled) {
+  filter: brightness(0.92);
+}
+
+/* Gradient border: paint the button's own dark background into the
+   padding-box and the gradient into the border-box, so only the
+   border ring shows the gradient — this respects border-radius,
+   unlike `border-image`. */
+.variant-gradient.type-outlined {
+  border: 1px solid transparent;
+  background-color: transparent;
+  background-image:
+    linear-gradient(var(--color-bg-surface-bg-surface-base), var(--color-bg-surface-bg-surface-base)),
+    var(--color-gradient-gradient-primary);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  color: var(--color-text-text-on-dark);
+}
+.variant-gradient.type-outlined .icon {
+  color: var(--color-icon-icon-on-dark);
+}
+.variant-gradient.type-outlined:hover:not(:disabled) {
+  background-image:
+    linear-gradient(
+      var(--color-bg-surface-bg-surface-overlay-dark-hover),
+      var(--color-bg-surface-bg-surface-overlay-dark-hover)
+    ),
+    var(--color-gradient-gradient-primary);
+}

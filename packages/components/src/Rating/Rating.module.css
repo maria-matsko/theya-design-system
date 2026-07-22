@@ -1,0 +1,19 @@
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-margin-margin-2xs); /* 4px */
+}
+
+.star {
+  display: inline-flex;
+  color: var(--color-icon-icon-warning);
+}
+
+.interactive .star {
+  cursor: pointer;
+}
+.interactive .star:focus-visible {
+  outline: 2px solid var(--color-border-border-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}

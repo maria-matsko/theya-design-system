@@ -1,0 +1,127 @@
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--size-gap-gap-xs); /* 8px */
+  padding-inline: var(--size-padding-padding-lg); /* 16px */
+  padding-block: var(--size-padding-padding-md); /* 12px */
+  border-radius: var(--size-border-radius-border-radius-md); /* 4px */
+  background-color: var(--color-bg-surface-bg-surface-overlay);
+}
+
+.interactive {
+  cursor: pointer;
+}
+.interactive:hover {
+  background-color: var(--color-bg-secondary-bg-secondary-subtler-hover);
+}
+.interactive:active {
+  background-color: var(--color-bg-secondary-bg-secondary-subtler-pressed);
+}
+
+.selected {
+  background-color: var(--color-bg-secondary-bg-secondary-subtler-pressed);
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* media variant has a fixed row height per Figma */
+.variant-media {
+  height: 57px;
+  padding-block: var(--size-padding-padding-xs); /* 8px */
+  align-items: flex-start;
+}
+
+.icon,
+.statusIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding-top: 3px;
+  color: var(--color-icon-icon-subtle);
+}
+
+.mediaIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.text {
+  margin: 0;
+  font-family: var(--typography-body-m-font);
+  font-weight: var(--typography-body-m-weight);
+  font-size: var(--typography-body-m-size);
+  line-height: var(--typography-body-m-line-height);
+  letter-spacing: var(--typography-body-m-letter-spacing);
+  color: var(--color-text-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.variant-media .text {
+  font-family: var(--typography-heading-heading-xs-font);
+  font-weight: var(--typography-weight-medium); /* 500 — weights ≥500 get 0.5px tracking, per DS standard (was bold/700) */
+  font-size: var(--typography-heading-heading-xs-size);
+  line-height: var(--typography-heading-heading-xs-line-height);
+  letter-spacing: 0.5px;
+}
+
+.description {
+  margin: 0;
+  font-family: var(--typography-body-s-font);
+  font-weight: var(--typography-body-s-weight);
+  font-size: var(--typography-body-s-size);
+  line-height: var(--typography-body-s-line-height);
+  letter-spacing: var(--typography-body-s-letter-spacing);
+  color: var(--color-text-text-subtler);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badge {
+  flex-shrink: 0;
+  padding-top: 3px;
+  align-self: flex-start;
+}
+
+.delimiter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: var(--color-border-border-subtle);
+}
+
+/* ---------- heading (group label) ---------- */
+.heading {
+  padding: 16px 16px 6px 40px;
+  font-family: var(--typography-heading-heading-3xs-font);
+  font-weight: var(--typography-heading-heading-3xs-weight);
+  font-size: var(--typography-heading-heading-3xs-size);
+  line-height: var(--typography-heading-heading-3xs-line-height);
+  letter-spacing: var(--typography-heading-heading-3xs-letter-spacing);
+  text-transform: uppercase;
+  color: var(--color-text-text-subtle);
+}
+
+/* ---------- divider ---------- */
+.dividerWrap {
+  padding-block: 4px;
+}

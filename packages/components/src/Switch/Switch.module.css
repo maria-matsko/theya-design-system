@@ -1,0 +1,158 @@
+.field {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--size-margin-margin-2xs); /* 4px */
+  align-items: flex-start;
+}
+
+.row {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-margin-margin-xs); /* 8px */
+  cursor: pointer;
+}
+
+.control {
+  position: relative;
+  display: inline-flex;
+  width: 36px;
+  height: var(--size-size-control-size-control-xs); /* 20px */
+  flex-shrink: 0;
+}
+
+.input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.input:disabled {
+  cursor: not-allowed;
+}
+
+.track {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--size-border-radius-border-radius-3xl); /* 32px, full pill */
+  background-color: var(--color-bg-secondary-bg-secondary);
+  transition: background-color 120ms ease;
+  pointer-events: none;
+}
+
+.thumb {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background-color: var(--color-icon-icon-on-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    left 120ms ease,
+    width 120ms ease,
+    height 120ms ease,
+    border-radius 120ms ease,
+    box-shadow 120ms ease;
+}
+
+.checkIcon {
+  color: var(--color-bg-primary-bg-primary);
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+
+/* hover — off state, not disabled */
+.input:hover:not(:disabled):not(:checked) ~ .track {
+  background-color: var(--color-bg-secondary-bg-secondary-hover);
+}
+.input:hover:not(:disabled):not(:checked) ~ .track .thumb {
+  box-shadow: 0 0 0 6px rgba(95, 97, 144, 0.2);
+}
+
+/* checked (on) — thumb becomes a 16px rounded square on the right, with checkmark */
+.input:checked ~ .track .thumb {
+  left: 18px;
+  width: 16px;
+  height: 16px;
+  border-radius: var(--size-border-radius-border-radius-xl); /* 8px */
+}
+.input:checked ~ .track .thumb .checkIcon {
+  opacity: 1;
+}
+
+/* intent colors — primary (default) */
+.input:checked ~ .track.intent-primary {
+  background-color: var(--color-bg-primary-bg-primary);
+}
+.input:hover:not(:disabled):checked ~ .track.intent-primary {
+  background-color: var(--color-bg-primary-bg-primary-hover);
+}
+.input:hover:not(:disabled):checked ~ .track.intent-primary .thumb {
+  box-shadow: 0 0 0 6px var(--color-focus-focus-ring);
+}
+
+/* intent colors — warning (checked only, per Figma) */
+.input:checked ~ .track.intent-warning {
+  background-color: var(--color-bg-warning-bg-warning);
+}
+
+/* intent colors — danger (checked only, per Figma) */
+.input:checked ~ .track.intent-danger {
+  background-color: var(--color-bg-danger-bg-danger);
+}
+
+/* focus */
+.input:focus-visible ~ .track {
+  box-shadow: 0 0 0 4px var(--color-focus-focus-ring);
+}
+
+/*
+  Disabled — Figma uses a different opacity per intent (primary: 50%,
+  warning/danger: 30%) applied to the whole control. The source file
+  also stacks an additional 40% opacity on just the thumb+checkmark on
+  top of that, which mathematically compounds to a much fainter result
+  (e.g. 50% × 40% = 20%) — that reads as more likely an authoring
+  artifact than a deliberate double-fade, so this applies a single,
+  clean opacity per intent instead of compounding two.
+*/
+.input:disabled ~ .track.intent-primary {
+  opacity: 0.5;
+}
+.input:disabled ~ .track.intent-warning,
+.input:disabled ~ .track.intent-danger {
+  opacity: 0.3;
+}
+.input:disabled ~ .track .thumb {
+  box-shadow: none;
+}
+
+.labelText {
+  font-family: var(--typography-body-l-font);
+  font-weight: var(--typography-body-l-weight);
+  font-size: var(--typography-body-l-size);
+  line-height: var(--typography-body-l-line-height);
+  letter-spacing: var(--typography-body-l-letter-spacing);
+  color: var(--color-text-text);
+}
+.input:disabled ~ .labelText {
+  color: var(--color-text-text-subtler);
+  opacity: 0.48;
+}
+
+.description {
+  font-family: var(--typography-body-xs-font);
+  font-weight: var(--typography-body-xs-weight);
+  font-size: var(--typography-body-xs-size);
+  line-height: var(--typography-body-xs-line-height);
+  letter-spacing: var(--typography-body-xs-letter-spacing);
+  color: var(--color-text-text-subtler);
+  padding-left: 44px; /* control width (36px) + row gap (8px) */
+}

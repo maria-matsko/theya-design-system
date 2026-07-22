@@ -1,0 +1,93 @@
+.sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--theya-nav-bg);
+  border-right: 1px solid var(--theya-nav-border);
+  transition: width 200ms ease;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 16px;
+  flex-shrink: 0;
+}
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  min-height: 27px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.createSlot {
+  width: 100%;
+}
+
+.collapseToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: var(--size-border-radius-border-radius-md, 4px);
+  border: none;
+  background: none;
+  color: var(--theya-nav-text-subtle, var(--color-icon-icon-subtle));
+  cursor: pointer;
+}
+.collapseToggle:hover {
+  background-color: var(--theya-nav-bg-hover, var(--color-bg-secondary-bg-secondary-subtle-hover));
+}
+
+.nav {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0 8px;
+}
+
+.footer {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid var(--theya-nav-border);
+}
+
+.widget {
+  width: 100%;
+}
+
+.profile {
+  width: 100%;
+}
+
+/* ---------- collapsed ---------- */
+.collapsed .header {
+  padding: 20px 8px;
+}
+.collapsed .headerTop {
+  justify-content: center;
+}
+.collapsed .logo {
+  display: none;
+}

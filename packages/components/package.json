@@ -29,6 +29,11 @@
     "@storybook/react-vite": "^8.3.0",
     "@storybook/addon-docs": "^8.3.0",
     "@storybook/addon-a11y": "^8.3.0",
-    "@storybook/react": "^8.3.0"
+    "@storybook/react": "^8.3.0",
+    "react-live": "^4.1.8",
+    "prism-react-renderer": "^2.4.1"
+  },
+  "dependencies": {
+    "recharts": "^3.10.0"
   }
 }

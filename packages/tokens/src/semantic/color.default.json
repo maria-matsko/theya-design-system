@@ -431,6 +431,11 @@
       "focus-ring-error": {
         "value": "{color.red-a.red-a300}"
       }
+    },
+    "gradient": {
+      "gradient-avatar": {
+        "value": "conic-gradient(from 0deg, {color.blue.blue-200} 33%, {color.purple.purple-200} 70%, {color.teal.teal-200} 100%)"
+      }
     }
   }
 }

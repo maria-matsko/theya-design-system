@@ -1,0 +1,168 @@
+.text {
+  margin: 0;
+}
+
+/* ---------- heading variants (fixed weight per Figma — no emphasize/strong sub-styles) ---------- */
+.variant-heading-3xl {
+  font-family: var(--typography-heading-heading-3xl-font);
+  font-weight: var(--typography-heading-heading-3xl-weight);
+  font-size: var(--typography-heading-heading-3xl-size);
+  line-height: var(--typography-heading-heading-3xl-line-height);
+  letter-spacing: var(--typography-heading-heading-3xl-letter-spacing);
+}
+.variant-heading-2xl {
+  font-family: var(--typography-heading-heading-2xl-font);
+  font-weight: var(--typography-heading-heading-2xl-weight);
+  font-size: var(--typography-heading-heading-2xl-size);
+  line-height: var(--typography-heading-heading-2xl-line-height);
+  letter-spacing: var(--typography-heading-heading-2xl-letter-spacing);
+}
+.variant-heading-xl {
+  font-family: var(--typography-heading-heading-xl-font);
+  font-weight: var(--typography-heading-heading-xl-weight);
+  font-size: var(--typography-heading-heading-xl-size);
+  line-height: var(--typography-heading-heading-xl-line-height);
+  letter-spacing: var(--typography-heading-heading-xl-letter-spacing);
+}
+.variant-heading-l {
+  font-family: var(--typography-heading-heading-l-font);
+  font-weight: var(--typography-heading-heading-l-weight);
+  font-size: var(--typography-heading-heading-l-size);
+  line-height: var(--typography-heading-heading-l-line-height);
+  letter-spacing: var(--typography-heading-heading-l-letter-spacing);
+}
+.variant-heading-m {
+  font-family: var(--typography-heading-heading-m-font);
+  font-weight: var(--typography-heading-heading-m-weight);
+  font-size: var(--typography-heading-heading-m-size);
+  line-height: var(--typography-heading-heading-m-line-height);
+  letter-spacing: var(--typography-heading-heading-m-letter-spacing);
+}
+.variant-heading-s {
+  font-family: var(--typography-heading-heading-s-font);
+  font-weight: var(--typography-heading-heading-s-weight);
+  font-size: var(--typography-heading-heading-s-size);
+  line-height: var(--typography-heading-heading-s-line-height);
+  letter-spacing: var(--typography-heading-heading-s-letter-spacing);
+}
+.variant-heading-xs {
+  font-family: var(--typography-heading-heading-xs-font);
+  font-weight: var(--typography-heading-heading-xs-weight);
+  font-size: var(--typography-heading-heading-xs-size);
+  line-height: var(--typography-heading-heading-xs-line-height);
+  letter-spacing: var(--typography-heading-heading-xs-letter-spacing);
+}
+.variant-heading-2xs {
+  font-family: var(--typography-heading-heading-2xs-font);
+  font-weight: var(--typography-heading-heading-2xs-weight);
+  font-size: var(--typography-heading-heading-2xs-size);
+  line-height: var(--typography-heading-heading-2xs-line-height);
+  letter-spacing: var(--typography-heading-heading-2xs-letter-spacing);
+}
+.variant-heading-3xs {
+  font-family: var(--typography-heading-heading-3xs-font);
+  font-weight: var(--typography-heading-heading-3xs-weight);
+  font-size: var(--typography-heading-heading-3xs-size);
+  line-height: var(--typography-heading-heading-3xs-line-height);
+  letter-spacing: var(--typography-heading-heading-3xs-letter-spacing);
+}
+
+/* ---------- body variants (support weight overrides: regular/emphasize/strong) ---------- */
+.variant-body-xl {
+  font-family: var(--typography-body-xl-font);
+  font-weight: var(--typography-body-xl-weight);
+  font-size: var(--typography-body-xl-size);
+  line-height: var(--typography-body-xl-line-height);
+  letter-spacing: var(--typography-body-xl-letter-spacing);
+}
+.variant-body-l {
+  font-family: var(--typography-body-l-font);
+  font-weight: var(--typography-body-l-weight);
+  font-size: var(--typography-body-l-size);
+  line-height: var(--typography-body-l-line-height);
+  letter-spacing: var(--typography-body-l-letter-spacing);
+}
+.variant-body-m {
+  font-family: var(--typography-body-m-font);
+  font-weight: var(--typography-body-m-weight);
+  font-size: var(--typography-body-m-size);
+  line-height: var(--typography-body-m-line-height);
+  letter-spacing: var(--typography-body-m-letter-spacing);
+}
+.variant-body-s {
+  font-family: var(--typography-body-s-font);
+  font-weight: var(--typography-body-s-weight);
+  font-size: var(--typography-body-s-size);
+  line-height: var(--typography-body-s-line-height);
+  letter-spacing: var(--typography-body-s-letter-spacing);
+}
+.variant-body-xs {
+  font-family: var(--typography-body-xs-font);
+  font-weight: var(--typography-body-xs-weight);
+  font-size: var(--typography-body-xs-size);
+  line-height: var(--typography-body-xs-line-height);
+  letter-spacing: var(--typography-body-xs-letter-spacing);
+}
+
+/* Weight overrides — only meaningful on body-* variants (headings have a
+   single fixed weight in this DS, no emphasize/strong sub-style). */
+.variant-body-xl.weight-emphasize {
+  font-weight: var(--typography-body-xl-weight-emphasize);
+}
+.variant-body-xl.weight-strong {
+  font-weight: var(--typography-body-xl-weight-strong);
+}
+.variant-body-l.weight-emphasize {
+  font-weight: var(--typography-body-l-weight-emphasize);
+}
+.variant-body-l.weight-strong {
+  font-weight: var(--typography-body-l-weight-strong);
+}
+.variant-body-m.weight-emphasize {
+  font-weight: var(--typography-body-m-weight-emphasize);
+}
+.variant-body-m.weight-strong {
+  font-weight: var(--typography-body-m-weight-strong);
+}
+.variant-body-s.weight-emphasize {
+  font-weight: var(--typography-body-s-weight-emphasize);
+}
+.variant-body-s.weight-strong {
+  font-weight: var(--typography-body-s-weight-strong);
+}
+.variant-body-xs.weight-emphasize {
+  font-weight: var(--typography-body-xs-weight-emphasize);
+}
+.variant-body-xs.weight-strong {
+  font-weight: var(--typography-body-xs-weight-strong);
+}
+.weight-medium {
+  font-weight: var(--typography-weight-medium); /* 500 */
+  letter-spacing: 0.5px; /* weights ≥500 get 0.5px tracking, per DS standard */
+}
+
+/* ---------- colors ---------- */
+.color-default {
+  color: var(--color-text-text);
+}
+.color-subtle {
+  color: var(--color-text-text-subtle);
+}
+.color-subtler {
+  color: var(--color-text-text-subtler);
+}
+.color-link {
+  color: var(--color-text-text-link);
+}
+.color-on-dark {
+  color: var(--color-text-text-on-dark);
+}
+.color-success {
+  color: var(--color-text-text-success);
+}
+.color-warning {
+  color: var(--color-text-text-warning);
+}
+.color-danger {
+  color: var(--color-text-text-danger);
+}

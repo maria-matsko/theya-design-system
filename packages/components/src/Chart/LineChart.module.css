@@ -1,0 +1,43 @@
+.tooltip {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 12px;
+  background-color: var(--color-bg-surface-bg-surface-overlay);
+  border: 1px solid var(--color-border-border-subtle);
+  border-radius: var(--size-border-radius-border-radius-lg);
+  box-shadow:
+    0px 1px 2px 1px rgba(0, 0, 0, 0.04),
+    0px 3px 9px 1px rgba(0, 0, 0, 0.12);
+  font-family: var(--typography-body-s-font);
+  font-size: var(--typography-body-s-size);
+}
+
+.tooltipLabel {
+  font-weight: var(--typography-weight-medium);
+  color: var(--color-text-text);
+  margin-bottom: 2px;
+}
+
+.tooltipRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tooltipDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+.tooltipName {
+  color: var(--color-text-text-subtler);
+  flex: 1;
+}
+
+.tooltipValue {
+  color: var(--color-text-text);
+  font-weight: var(--typography-weight-medium);
+}

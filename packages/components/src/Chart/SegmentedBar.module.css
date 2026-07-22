@@ -1,0 +1,10 @@
+.segmentedTrack {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+.segment {
+  min-width: 2px;
+}

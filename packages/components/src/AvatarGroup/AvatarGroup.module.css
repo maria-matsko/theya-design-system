@@ -1,0 +1,37 @@
+.group {
+  display: inline-flex;
+  align-items: center;
+}
+
+.item {
+  border-radius: 9999px;
+  box-shadow: 0 0 0 2px var(--color-blue-blue-200);
+  position: relative;
+}
+.group .item:not(:last-child) {
+  margin-right: var(--_overlap, -12px);
+}
+
+.overflow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg-secondary-bg-secondary-subtle);
+  color: var(--color-text-text-subtler);
+  font-family: var(--typography-body-xs-font);
+  font-weight: var(--typography-body-xs-weight-strong);
+  font-size: var(--typography-body-xs-size);
+}
+
+.size-sm {
+  width: var(--size-size-control-size-control-lg); /* 32px */
+  height: var(--size-size-control-size-control-lg);
+}
+.size-md {
+  width: var(--size-size-control-size-control-2xl); /* 48px */
+  height: var(--size-size-control-size-control-2xl);
+}
+.size-lg {
+  width: var(--size-size-control-size-control-4xl); /* 64px */
+  height: var(--size-size-control-size-control-4xl);
+}

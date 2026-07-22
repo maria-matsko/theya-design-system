@@ -1,0 +1,59 @@
+.track {
+  position: relative;
+  width: 100%;
+  border-radius: 9999px;
+  background-color: var(--color-bg-neutral-bg-neutral-subtle);
+  overflow: visible;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 300ms ease;
+  overflow: hidden;
+}
+
+.milestone {
+  position: absolute;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 9999px;
+  transform: translate(-50%, -50%);
+  transition: background-color 200ms ease;
+}
+
+.ringWrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ringFill {
+  transition: stroke-dashoffset 300ms ease;
+}
+
+.ringCenter {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ticks {
+  display: flex;
+  align-items: stretch;
+  gap: 2px;
+  width: 100%;
+}
+.tick {
+  flex: 1;
+  min-width: 1px;
+  border-radius: 1px;
+  background-color: var(--color-border-border-subtler);
+  transition: background-color 200ms ease;
+}

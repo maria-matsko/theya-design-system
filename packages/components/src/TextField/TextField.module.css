@@ -1,0 +1,245 @@
+.field {
+  display: flex;
+  gap: var(--size-margin-margin-2xs); /* 4px */
+}
+
+.label-top {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.label-left {
+  flex-direction: row;
+  align-items: flex-start;
+}
+.label-left .label {
+  width: 216px;
+  padding-top: 9px;
+  flex-shrink: 0;
+}
+.label-left .valueColumn {
+  flex: 1;
+  min-width: 0;
+}
+
+.label {
+  display: inline-flex;
+  align-items: flex-start;
+  font-family: var(--typography-body-l-font);
+  font-weight: var(--typography-body-l-weight);
+  font-size: var(--typography-body-l-size);
+  line-height: var(--typography-body-l-line-height);
+  letter-spacing: var(--typography-body-l-letter-spacing);
+  color: var(--color-text-text);
+}
+
+.required {
+  color: var(--color-icon-icon-danger);
+  margin-left: 2px;
+}
+
+.valueColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-margin-margin-2xs); /* 4px */
+}
+
+/* ---------- shell (the input box) ---------- */
+
+.shell {
+  display: flex;
+  align-items: center;
+  gap: var(--size-margin-margin-xs); /* 8px */
+  transition:
+    background-color 120ms ease,
+    border-color 120ms ease,
+    box-shadow 120ms ease;
+}
+
+.width-fluid {
+  width: 100%;
+}
+.width-sm {
+  width: var(--size-width-width-control-sm); /* 60px */
+}
+.width-md {
+  width: var(--size-width-width-control-lg); /* 200px */
+}
+.width-lg {
+  width: var(--size-width-width-control-2xl); /* 348px */
+}
+.width-xl {
+  width: var(--size-width-width-control-3xl); /* 500px */
+}
+
+.size-md {
+  height: var(--size-size-control-size-control-lg); /* 32px */
+}
+.size-lg {
+  height: var(--size-size-control-size-control-xl); /* 40px */
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-icon-icon-subtle);
+}
+.iconDanger {
+  color: var(--color-icon-icon-danger);
+}
+.iconSuccess {
+  color: var(--color-icon-icon-success);
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--typography-body-l-font);
+  font-weight: var(--typography-body-l-weight);
+  font-size: var(--typography-body-l-size);
+  line-height: var(--typography-body-l-line-height);
+  letter-spacing: var(--typography-body-l-letter-spacing);
+  color: var(--color-text-text);
+}
+.input::placeholder {
+  color: var(--color-text-text-subtler);
+}
+.input:disabled {
+  cursor: not-allowed;
+}
+
+.clearButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 4px;
+  border: none;
+  background: none;
+  border-radius: var(--size-border-radius-border-radius-lg);
+  color: var(--color-icon-icon-subtle);
+  cursor: pointer;
+  transition: background-color 120ms ease;
+}
+.clearButton:hover {
+  background-color: var(--color-bg-secondary-bg-secondary-subtle);
+}
+
+/* ---------- variant: outline ---------- */
+.variant-outline {
+  background-color: var(--color-bg-input-bg-input);
+  border: 1px solid var(--color-border-border-subtle);
+  border-radius: var(--size-border-radius-border-radius-lg); /* 6px */
+  padding-inline: var(--size-padding-padding-lg) var(--size-padding-padding-xs); /* 16px / 8px */
+}
+.variant-outline:hover:not(:has(.input:disabled)):not(.readOnly) {
+  border-color: var(--color-border-border-primary);
+}
+.variant-outline:has(.input:focus) {
+  background-color: var(--color-bg-input-bg-input-active);
+  border-color: var(--color-border-border-primary);
+  box-shadow: 0 0 0 4px var(--color-focus-focus-ring);
+}
+.variant-outline:has(.input:focus) .input {
+  color: var(--color-text-text);
+}
+
+/* ---------- variant: filled ---------- */
+.variant-filled {
+  background-color: var(--color-bg-secondary-bg-secondary-subtler);
+  border: 1px solid transparent;
+  border-radius: var(--size-border-radius-border-radius-lg);
+  padding-inline: var(--size-padding-padding-lg) var(--size-padding-padding-xs);
+}
+.variant-filled:has(.input:focus) {
+  border-color: var(--color-border-border-primary);
+  box-shadow: 0 0 0 4px var(--color-focus-focus-ring);
+}
+
+/* ---------- variant: flushed (underline) ---------- */
+.variant-flushed {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border-border-subtle);
+  border-radius: 0;
+  padding-inline: 0 var(--size-padding-padding-2xs); /* 0 / 4px */
+}
+.variant-flushed:has(.input:focus) {
+  border-bottom-color: var(--color-border-border-primary);
+}
+
+/* ---------- disabled / read-only ---------- */
+.shell:has(.input:disabled) {
+  background-color: var(--color-bg-neutral-bg-neutral-subtler);
+  border-color: var(--color-border-border-subtler);
+}
+.shell:has(.input:disabled) .icon {
+  opacity: 0.48;
+}
+.shell:has(.input:disabled) .input {
+  opacity: 0.5;
+}
+.readOnly {
+  background-color: var(--color-bg-neutral-bg-neutral-subtler);
+  border-color: var(--color-border-border-subtle);
+}
+.readOnly .input {
+  font-style: italic;
+  color: var(--color-text-text-subtle);
+}
+
+/* ---------- validation states ---------- */
+.error.variant-outline,
+.error.variant-filled {
+  background-color: var(--color-bg-input-bg-input-danger);
+  border-color: var(--color-border-border-danger);
+}
+.error.variant-flushed {
+  border-bottom-color: var(--color-border-border-danger);
+}
+.error .input {
+  color: var(--color-text-text-danger);
+}
+
+.success.variant-outline,
+.success.variant-filled {
+  background-color: var(--color-bg-success-bg-success-subtler);
+  border-color: var(--color-border-border-success);
+}
+.success.variant-flushed {
+  border-bottom-color: var(--color-border-border-success);
+}
+
+/* ---------- inline message ---------- */
+.message {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--size-margin-margin-2xs); /* 4px */
+  font-family: var(--typography-body-xs-font);
+  font-weight: var(--typography-body-xs-weight);
+  font-size: var(--typography-body-xs-size);
+  line-height: var(--typography-body-xs-line-height);
+  letter-spacing: var(--typography-body-xs-letter-spacing);
+}
+.messageIcon {
+  display: inline-flex;
+  padding-top: 1px;
+  flex-shrink: 0;
+}
+.messageNeutral {
+  color: var(--color-text-text-subtler);
+}
+.messageError {
+  color: var(--color-text-text-danger);
+}
+.messageError .messageIcon {
+  color: var(--color-icon-icon-danger);
+}
+.messageSuccess {
+  color: var(--color-text-text-success);
+}

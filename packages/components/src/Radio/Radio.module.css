@@ -1,0 +1,125 @@
+.field {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--size-margin-margin-2xs); /* 4px */
+  align-items: flex-start;
+}
+
+.row {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-margin-margin-xs); /* 8px */
+  cursor: pointer;
+}
+
+.control {
+  position: relative;
+  display: inline-flex;
+  width: var(--size-size-control-size-control-xs); /* 20px */
+  height: var(--size-size-control-size-control-xs);
+  flex-shrink: 0;
+}
+
+.input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.input:disabled {
+  cursor: not-allowed;
+}
+
+.circle {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: var(--color-bg-input-bg-input);
+  border: 1px solid var(--color-border-border-subtle);
+  transition:
+    background-color 120ms ease,
+    border-color 120ms ease,
+    box-shadow 120ms ease;
+  pointer-events: none;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: var(--color-icon-icon-on-dark);
+  box-shadow: 0px 2px 0px 0px var(--color-elevation-shadow-button);
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+
+/* hover — unchecked only, per Figma (no distinct "checked + hover" drawn) */
+.input:hover:not(:disabled):not(:checked) ~ .circle {
+  border-color: var(--color-border-border-primary);
+  /* subtle inset highlight, matches the Figma "pressed" look on hover/focus */
+  box-shadow: inset 0px 3px 0px 0px rgba(0, 104, 222, 0.16);
+}
+
+/* checked */
+.input:checked ~ .circle {
+  background-color: var(--color-bg-primary-bg-primary);
+  border-color: transparent;
+}
+.input:checked ~ .circle .dot {
+  opacity: 1;
+}
+
+/* focus */
+.input:focus-visible ~ .circle {
+  box-shadow:
+    0 0 0 4px var(--color-focus-focus-ring),
+    inset 0px 3px 0px 0px rgba(0, 104, 222, 0.16);
+}
+
+/*
+  Disabled — box background/border switches to the neutral-subtler
+  treatment regardless of checked state; only the dot's opacity signals
+  checked-ness. No drawn "disabled + unchecked" frame in Figma, but this
+  follows the same pattern as the checked disabled variant.
+*/
+.input:disabled ~ .circle {
+  background-color: var(--color-bg-neutral-bg-neutral-subtler);
+  border-color: var(--color-border-border-subtler);
+  box-shadow: none;
+}
+.input:disabled ~ .circle .dot {
+  background-color: var(--color-icon-icon-subtler);
+  box-shadow: none;
+}
+.input:disabled:checked ~ .circle .dot {
+  opacity: 0.4;
+}
+
+.labelText {
+  font-family: var(--typography-body-l-font);
+  font-weight: var(--typography-body-l-weight);
+  font-size: var(--typography-body-l-size);
+  line-height: var(--typography-body-l-line-height);
+  letter-spacing: var(--typography-body-l-letter-spacing);
+  color: var(--color-text-text);
+}
+.input:disabled ~ .labelText {
+  color: var(--color-text-text-subtler);
+  opacity: 0.48;
+}
+
+.description {
+  font-family: var(--typography-body-xs-font);
+  font-weight: var(--typography-body-xs-weight);
+  font-size: var(--typography-body-xs-size);
+  line-height: var(--typography-body-xs-line-height);
+  letter-spacing: var(--typography-body-xs-letter-spacing);
+  color: var(--color-text-text-subtler);
+  padding-left: 28px; /* control width (20px) + row gap (8px) */
+}

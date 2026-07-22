@@ -1,0 +1,35 @@
+.gauge {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.arc {
+  transition: stroke-dasharray 300ms ease;
+}
+
+.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.value {
+  font-family: var(--typography-heading-heading-l-font);
+  font-weight: var(--typography-heading-heading-l-weight);
+  font-size: var(--typography-heading-heading-l-size);
+  line-height: var(--typography-heading-heading-l-line-height);
+  color: var(--color-text-text);
+}
+
+.label {
+  font-family: var(--typography-body-m-font);
+  font-size: var(--typography-body-m-size);
+  color: var(--color-text-text-subtler);
+}

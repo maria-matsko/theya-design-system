@@ -1,0 +1,102 @@
+.message {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--size-margin-margin-xs); /* 8px */
+  padding: var(--size-padding-padding-lg); /* 16px */
+  border-radius: var(--size-border-radius-border-radius-lg); /* 6px */
+  overflow: hidden;
+}
+
+.accentLine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  opacity: 0.6;
+}
+
+.icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--typography-heading-heading-s-font);
+  font-weight: var(--typography-weight-medium); /* 500 — weights ≥500 get 0.5px tracking, per DS standard (was semibold/600) */
+  font-size: var(--typography-heading-heading-s-size);
+  line-height: var(--typography-heading-heading-s-line-height);
+  letter-spacing: 0.5px;
+  color: var(--color-text-text);
+}
+
+.text {
+  margin: 0;
+  padding-top: var(--size-padding-padding-3xs); /* 2px */
+  font-family: var(--typography-body-l-font);
+  font-weight: var(--typography-body-l-weight);
+  font-size: var(--typography-body-l-size);
+  line-height: var(--typography-body-l-line-height);
+  letter-spacing: var(--typography-body-l-letter-spacing);
+  color: var(--color-text-text);
+}
+
+.action {
+  padding-top: var(--size-padding-padding-xs); /* 8px */
+}
+
+.closeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 2px;
+  border: none;
+  background: none;
+  border-radius: var(--size-border-radius-border-radius-md);
+  color: var(--color-icon-icon-subtle);
+  cursor: pointer;
+  transition: opacity 120ms ease;
+}
+.closeButton:hover {
+  opacity: 0.7;
+}
+
+/* ---------- intents ---------- */
+.intent-success {
+  background-color: var(--color-bg-success-bg-success-subtle);
+}
+.intent-success .accentLine {
+  background-color: var(--color-bg-success-bg-success);
+}
+
+.intent-info {
+  background-color: var(--color-bg-info-bg-info-subtle);
+}
+.intent-info .accentLine {
+  background-color: var(--color-bg-info-bg-info);
+}
+
+.intent-warning {
+  background-color: var(--color-bg-warning-bg-warning-subtle);
+}
+.intent-warning .accentLine {
+  background-color: var(--color-bg-warning-bg-warning);
+}
+
+.intent-danger {
+  background-color: var(--color-bg-danger-bg-danger-subtle);
+}
+.intent-danger .accentLine {
+  background-color: var(--color-bg-danger-bg-danger);
+}

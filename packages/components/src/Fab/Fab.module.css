@@ -14,7 +14,6 @@
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: var(--size-border-radius-border-radius-lg); /* 6px, all sizes */
   cursor: pointer;
   box-shadow:
     0px 1px 1px 0px rgba(0, 0, 0, 0.04),
@@ -22,6 +21,13 @@
   transition:
     background-color 120ms ease,
     box-shadow 120ms ease;
+}
+
+.shape-square {
+  border-radius: var(--size-border-radius-border-radius-lg); /* 6px, all sizes */
+}
+.shape-round {
+  border-radius: 9999px;
 }
 
 .fab:disabled {

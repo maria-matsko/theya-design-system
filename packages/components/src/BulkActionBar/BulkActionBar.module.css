@@ -1,0 +1,106 @@
+.bar {
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  border-radius: 9999px;
+  background-color: var(--color-bg-primary-bg-primary);
+  box-shadow:
+    0px 1px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.selectedCell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  padding: 0 12px 0 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--color-icon-icon-on-dark);
+  cursor: pointer;
+}
+
+.count {
+  font-family: var(--typography-body-m-font);
+  font-weight: var(--typography-weight-medium);
+  font-size: var(--typography-body-m-size);
+  color: var(--color-text-text-on-dark);
+  white-space: nowrap;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 8px 0 12px;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 10px;
+  border: none;
+  background: none;
+  border-radius: 9999px;
+  font-family: var(--typography-body-m-font);
+  font-weight: var(--typography-weight-medium);
+  font-size: var(--typography-body-m-size);
+  color: var(--color-text-text-subtle-on-dark);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.action:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: var(--color-text-text-on-dark);
+}
+
+.destructive:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.actionIcon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.overflowWrap {
+  position: relative;
+}
+
+.overflowButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  border-radius: 9999px;
+  color: var(--color-text-text-subtle-on-dark);
+  cursor: pointer;
+}
+.overflowButton:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: var(--color-text-text-on-dark);
+}
+
+.overflowMenu {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  margin-bottom: 8px;
+  z-index: 10;
+}

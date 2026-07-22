@@ -11,8 +11,8 @@ import styles from './IconButton.module.css';
  */
 export type IconButtonType = 'filled' | 'outlined' | 'ghost' | 'ghost-inverse';
 
-/** Matches Figma's Size axis: XSmall=12px / Small=16px / Medium=20px / Large=24px. */
-export type IconButtonSize = 'xs' | 'sm' | 'md' | 'lg';
+/** Matches Button's height ruler: Small=28px / Medium=32px / Large=40px. */
+export type IconButtonSize = 'sm' | 'md' | 'lg';
 
 export interface IconButtonProps
   extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'color' | 'type'> {

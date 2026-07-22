@@ -1,0 +1,81 @@
+.state {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+}
+
+.iconSlot {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 1px;
+  flex-shrink: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+.contentSpaced {
+  gap: var(--size-margin-margin-lg, 16px);
+}
+
+.progressRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  width: 100%;
+}
+
+.textCol {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--typography-heading-heading-s-font);
+  font-weight: var(--typography-weight-medium); /* 500, DS standard (Figma spec was semibold/600) */
+  font-size: var(--typography-heading-heading-s-size);
+  line-height: var(--typography-heading-heading-s-line-height);
+  letter-spacing: 0.5px;
+  color: var(--color-text-text-subtle);
+}
+.titleStrong {
+  color: var(--color-text-text);
+}
+
+.description {
+  margin: 0;
+  font-family: var(--typography-body-s-font);
+  font-weight: var(--typography-body-s-weight);
+  font-size: var(--typography-body-s-size);
+  line-height: var(--typography-body-s-line-height);
+  color: var(--color-text-text-subtle);
+}
+
+.link {
+  font-weight: var(--typography-weight-medium);
+  letter-spacing: 0.5px;
+  color: var(--color-text-text-link);
+  cursor: pointer;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+.percent {
+  flex-shrink: 0;
+  width: 32px;
+  text-align: right;
+  font-family: var(--typography-body-s-font);
+  font-size: var(--typography-body-s-size);
+  color: var(--color-text-text-subtler);
+}

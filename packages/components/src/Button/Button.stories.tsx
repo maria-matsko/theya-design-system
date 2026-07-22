@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
 import type { ButtonProps } from './Button';
+import { ThemeProvider } from '../ThemeProvider/ThemeProvider';
 import { Icon } from '@theya/icons';
 
 const meta: Meta<typeof Button> = {
@@ -133,4 +134,46 @@ export const Disabled: Story = {
 export const FullWidth: Story = {
   args: { fullWidth: true },
   parameters: { layout: 'padded' },
+};
+
+/**
+ * The "gradient" variant, only meaningful in the dark theme — uses
+ * the new primary-grad-01/02/03 tokens for a filled gradient
+ * background (matches the THEIA gradient-button reference).
+ */
+export const GradientFilled: Story = {
+  render: () => (
+    <ThemeProvider theme="dark" style={{ padding: 40 }}>
+      <div style={{ display: 'flex', gap: 12 }}>
+        <Button variant="gradient" type="filled" leftIcon={<Icon name="user" size={16} />}>
+          Button
+        </Button>
+        <Button variant="gradient" type="filled" size="sm">
+          Small
+        </Button>
+        <Button variant="gradient" type="filled" size="lg">
+          Large
+        </Button>
+      </div>
+    </ThemeProvider>
+  ),
+};
+
+/** Gradient border — fill stays dark, only the border ring uses the gradient. */
+export const GradientOutlined: Story = {
+  render: () => (
+    <ThemeProvider theme="dark" style={{ padding: 40 }}>
+      <div style={{ display: 'flex', gap: 12 }}>
+        <Button variant="gradient" type="outlined" leftIcon={<Icon name="star" size={16} />}>
+          Button
+        </Button>
+        <Button variant="gradient" type="outlined" size="sm">
+          Small
+        </Button>
+        <Button variant="gradient" type="outlined" size="lg">
+          Large
+        </Button>
+      </div>
+    </ThemeProvider>
+  ),
 };

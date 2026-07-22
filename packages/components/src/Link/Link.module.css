@@ -1,0 +1,71 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-margin-margin-2xs); /* 4px */
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 120ms ease;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ---------- sizes ---------- */
+.size-sm {
+  font-family: var(--typography-body-s-font);
+  font-size: var(--typography-body-s-size);
+  line-height: var(--typography-body-s-line-height);
+}
+.size-md {
+  font-family: var(--typography-body-m-font);
+  font-size: var(--typography-body-m-size);
+  line-height: var(--typography-body-m-line-height);
+}
+.size-lg {
+  font-family: var(--typography-body-l-font);
+  font-size: var(--typography-body-l-size);
+  line-height: var(--typography-body-l-line-height);
+}
+.size-xl {
+  font-family: var(--typography-heading-heading-xl-font);
+  font-size: var(--typography-heading-heading-xl-size);
+  line-height: var(--typography-heading-heading-xl-line-height);
+}
+.size-xl .icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* ---------- weight (regular by default, bold if "strong") ---------- */
+.link {
+  font-weight: 400;
+}
+.strong {
+  font-weight: 700;
+  letter-spacing: 0.5px; /* weights ≥500 get 0.5px tracking, per DS standard */
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-position: from-font;
+}
+
+/* ---------- colors ---------- */
+.level-primary {
+  color: var(--color-text-text-link);
+}
+.level-primary:hover {
+  color: var(--color-text-text-link-hover);
+}
+
+.level-secondary {
+  color: var(--color-text-text-subtler);
+}
+.level-secondary:hover {
+  color: var(--color-text-text-subtle);
+}

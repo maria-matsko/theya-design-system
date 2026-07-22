@@ -26,10 +26,10 @@
   padding-inline: var(--size-padding-padding-2xs); /* 4px */
   padding-block: 1px;
   font-family: var(--typography-body-xs-font);
-  font-weight: var(--typography-body-xs-weight-strong);
+  font-weight: var(--typography-weight-medium); /* 500 — weights ≥500 get 0.5px tracking, matching Button */
   font-size: var(--typography-body-xs-size);
   line-height: var(--typography-body-xs-line-height);
-  letter-spacing: var(--typography-body-xs-letter-spacing);
+  letter-spacing: 0.5px;
 }
 
 .variant-qty.size-md {
@@ -37,10 +37,10 @@
      there's no primitive between size4 and size6 to match it. */
   padding-inline: 5px;
   font-family: var(--typography-body-m-font);
-  font-weight: var(--typography-body-m-weight-strong);
+  font-weight: var(--typography-weight-medium); /* 500 — weights ≥500 get 0.5px tracking, matching Button */
   font-size: var(--typography-body-m-size);
   line-height: var(--typography-body-m-line-height);
-  letter-spacing: var(--typography-body-m-letter-spacing);
+  letter-spacing: 0.5px;
 }
 
 .variant-qty.border-round.size-sm {

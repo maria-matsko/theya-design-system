@@ -559,6 +559,17 @@
       "slate-a900": {
         "value": "rgba(21, 21, 41, 0.7)"
       }
+    },
+    "primary-gradient": {
+      "primary-grad-01": {
+        "value": "#038fd3"
+      },
+      "primary-grad-02": {
+        "value": "#1b5cda"
+      },
+      "primary-grad-03": {
+        "value": "#a022c7"
+      }
     }
   }
 }

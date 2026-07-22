@@ -1,19 +1,54 @@
 /*
-  Clash Grotesk — Indian Type Foundry, via Fontshare (free, self-hosted).
-  See ./clash-grotesk/LICENSE.txt for the full license.
+  Sora — via Fontsource (Google Fonts, OFL-1.1, self-hosted).
+  See ./sora/LICENSE.txt for the full license.
 
-  Using the variable font means one file covers every weight our
-  typography tokens use (200/400/500/600/700), instead of loading five
-  separate static files.
+  Universal typeface (replaces Clash Grotesk everywhere, both themes).
+  Static weights covering the full typography scale: 200 (heading-3xl),
+  400 (body regular), 500 (body medium / button), 600 (body emphasize /
+  heading-s), 700 (heading bold / body strong).
 */
 @font-face {
-  font-family: 'Clash Grotesk';
+  font-family: 'Sora';
   src:
-    url('./clash-grotesk/ClashGrotesk-Variable.woff2') format('woff2-variations'),
-    url('./clash-grotesk/ClashGrotesk-Variable.woff2') format('woff2'),
-    url('./clash-grotesk/ClashGrotesk-Variable.woff') format('woff'),
-    url('./clash-grotesk/ClashGrotesk-Variable.ttf') format('truetype');
-  font-weight: 200 700;
+    url('./sora/sora-latin-200-normal.woff2') format('woff2'),
+    url('./sora/sora-latin-200-normal.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sora';
+  src:
+    url('./sora/sora-latin-400-normal.woff2') format('woff2'),
+    url('./sora/sora-latin-400-normal.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sora';
+  src:
+    url('./sora/sora-latin-500-normal.woff2') format('woff2'),
+    url('./sora/sora-latin-500-normal.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sora';
+  src:
+    url('./sora/sora-latin-600-normal.woff2') format('woff2'),
+    url('./sora/sora-latin-600-normal.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sora';
+  src:
+    url('./sora/sora-latin-700-normal.woff2') format('woff2'),
+    url('./sora/sora-latin-700-normal.woff') format('woff');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }

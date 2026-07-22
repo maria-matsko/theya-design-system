@@ -25,6 +25,10 @@ const meta: Meta<typeof Fab> = {
       control: 'select',
       options: ['sm', 'md', 'lg'],
     },
+    shape: {
+      control: 'select',
+      options: ['square', 'round'],
+    },
     disabled: { control: 'boolean' },
   },
   args: {
@@ -32,6 +36,7 @@ const meta: Meta<typeof Fab> = {
     'aria-label': 'Favorite',
     color: 'primary',
     size: 'lg',
+    shape: 'square',
   },
 };
 
@@ -58,6 +63,17 @@ export const AllSizes: Story = {
       <Fab {...args} size="sm" />
       <Fab {...args} size="md" />
       <Fab {...args} size="lg" />
+    </div>
+  ),
+};
+
+/** Round FAB variant, at every size. */
+export const RoundShape: Story = {
+  render: (args) => (
+    <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
+      <Fab {...args} shape="round" size="sm" />
+      <Fab {...args} shape="round" size="md" />
+      <Fab {...args} shape="round" size="lg" />
     </div>
   ),
 };

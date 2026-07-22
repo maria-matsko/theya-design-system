@@ -3,12 +3,12 @@ import type { ButtonHTMLAttributes, ReactNode } from 'react';
 import styles from './Button.module.css';
 
 /**
- * Visual treatment axis. Only "flat" is implemented today.
- * "gradient" | "gradient-animated" | "glass" are reserved so that
- * adding them later is a matter of adding CSS + a case here — the
- * component API and every call site stay the same.
+ * Visual treatment axis. "gradient" uses the dark-theme gradient
+ * tokens (fill for type="filled", a gradient border for
+ * type="outlined"/"ghost"). "gradient-animated" | "glass" remain
+ * reserved for later.
  */
-export type ButtonVariant = 'flat';
+export type ButtonVariant = 'flat' | 'gradient';
 
 /**
  * Surface treatment within the "flat" variant — matches Figma's

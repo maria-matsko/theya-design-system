@@ -64,7 +64,7 @@ export const LightDefault: Story = {
             </div>
           }
         >
-          <NavGroup label="Google">
+          <NavGroup label="My Profile">
             <NavItem
               icon={<Icon name="apps" size={16} />}
               label="Overview"
@@ -148,7 +148,7 @@ export const Collapsible: Story = {
           collapsed={collapsed}
           onToggleCollapse={() => setCollapsed((c) => !c)}
         >
-          <NavGroup label="Google">
+          <NavGroup label="My Profile">
             <NavItem icon={<Icon name="apps" size={16} />} label="Overview" />
             <NavItem icon={<Icon name="wallet" size={16} />} label="Balance" active />
             <NavItem icon={<Icon name="globe" size={16} />} label="Travel" badge={22} />

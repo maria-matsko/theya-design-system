@@ -42,6 +42,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-family: var(--typography-body-m-font);
+  font-size: var(--typography-body-m-size);
+  font-weight: var(--typography-weight-medium);
+  color: var(--color-text-text);
 }
 
 .ticks {

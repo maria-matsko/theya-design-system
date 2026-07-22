@@ -117,7 +117,7 @@ export const FullExample: StoryObj<typeof Table<Employee>> = {
               <IconButton
                 icon={<Icon name="menu" size={16} />}
                 aria-label="Row actions"
-                size="sm"
+                size="md"
                 type="ghost"
                 onClick={() => setOpenMenuId(openMenuId === row.id ? null : row.id)}
               />

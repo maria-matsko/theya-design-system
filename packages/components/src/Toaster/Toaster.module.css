@@ -30,16 +30,16 @@
   display: inline-flex;
   flex-shrink: 0;
   margin-top: 4px;
-  color: var(--color-icon-icon-info);
+  color: var(--color-icon-icon-info-on-dark);
 }
 .intent-success .icon {
-  color: var(--color-icon-icon-success);
+  color: var(--color-icon-icon-success-on-dark);
 }
 .intent-error .icon {
-  color: var(--color-icon-icon-danger);
+  color: var(--color-icon-icon-danger-on-dark);
 }
 .intent-warning .icon {
-  color: var(--color-icon-icon-warning);
+  color: var(--color-icon-icon-warning-on-dark);
 }
 .intent-accent .icon {
   color: var(--color-icon-icon-success);
@@ -52,7 +52,7 @@
   height: 8px;
   margin: 6px 4px;
   border-radius: 9999px;
-  background-color: var(--color-icon-icon-info);
+  background-color: var(--color-icon-icon-info-on-dark);
 }
 
 .title {
@@ -97,6 +97,7 @@
 
 /* ---------- progress ---------- */
 .progressBlock {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -139,6 +140,7 @@
 
 /* ---------- description ---------- */
 .description {
+  box-sizing: border-box;
   width: 100%;
   padding-left: 22px;
 }

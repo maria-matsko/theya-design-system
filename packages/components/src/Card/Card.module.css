@@ -84,8 +84,8 @@
 .avatar {
   position: absolute;
   top: 177px; /* matches .media's fixed height */
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: var(--size-padding-padding-lg); /* 16px, aligns with card's content padding */
+  transform: translateY(-50%);
   z-index: 1;
 }
 

@@ -435,6 +435,9 @@
     "gradient": {
       "gradient-avatar": {
         "value": "conic-gradient(from 0deg, {color.blue.blue-200} 33%, {color.purple.purple-200} 70%, {color.teal.teal-200} 100%)"
+      },
+      "gradient-primary": {
+        "value": "linear-gradient(90deg, {color.primary-gradient.primary-grad-01} 0%, {color.blue.blue-500} 25%, {color.primary-gradient.primary-grad-02} 50%, {color.primary-gradient.primary-grad-03} 100%)"
       }
     }
   }

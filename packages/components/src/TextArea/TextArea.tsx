@@ -8,7 +8,7 @@ export type TextAreaWidth = 'sm' | 'md' | 'lg' | 'xl' | 'fluid'; // 60 / 200 / 3
 export interface TextAreaProps
   extends Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'size' | 'width'> {
   width?: TextAreaWidth;
-  /** Drag-to-resize direction from the bottom-right corner handle. Defaults to "vertical". */
+  /** Drag-to-resize direction from the bottom-right corner handle. Defaults to "both". */
   resize?: 'vertical' | 'both' | 'none';
   label?: ReactNode;
   labelPosition?: 'top' | 'left';
@@ -22,7 +22,7 @@ export interface TextAreaProps
 export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(function TextArea(
   {
     width = 'fluid',
-    resize = 'vertical',
+    resize = 'both',
     label,
     labelPosition = 'top',
     required = false,

@@ -2,5 +2,5 @@
 // Only icons whose native viewBox isn't the standard 24x24 appear
 // here (e.g. a manually-added Figma export at a different size).
 export const iconViewBox: Record<string, string> = {
-  "danger": "0 0 16 16",
+  "danger": "-0.3 -0.3 16.6 16.6",
 };

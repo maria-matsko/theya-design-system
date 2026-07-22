@@ -4,6 +4,8 @@ import { Menu } from './Menu';
 import { MenuItem } from '../MenuItem/MenuItem';
 import { Button } from '../Button/Button';
 import { Icon } from '@theya/icons';
+import rocketIcon from '../assets/rocket.svg';
+import protectIcon from '../assets/protect.svg';
 
 const meta: Meta<typeof Menu> = {
   title: 'Components/Menu',
@@ -73,14 +75,14 @@ export const MediaItems: Story = {
         variant="media"
         text="Rockets"
         description="Launch something new"
-        mediaIcon={<Icon name="lightning" variant="solid" size={32} />}
+        mediaIcon={<img src={rocketIcon} alt="" width={32} height={32} />}
         onClick={() => {}}
       />
       <MenuItem
         variant="media"
         text="Shield"
         description="Stay protected"
-        mediaIcon={<Icon name="shield" variant="solid" size={32} />}
+        mediaIcon={<img src={protectIcon} alt="" width={32} height={32} />}
         onClick={() => {}}
       />
     </Menu>
@@ -106,7 +108,7 @@ export const AnchoredUnderTriggers: Story = {
     );
 
     return (
-      <div style={{ display: 'flex', gap: 48 }}>
+      <div style={{ display: 'flex', gap: 48, height: 260, alignItems: 'flex-start' }}>
         <div style={{ position: 'relative' }}>
           <Button
             rightIcon={<Icon name="caret-down" size={16} />}
@@ -128,7 +130,9 @@ export const AnchoredUnderTriggers: Story = {
               border: 'none',
               color: 'var(--color-text-text-link)',
               cursor: 'pointer',
-              font: 'inherit',
+              fontFamily: 'var(--typography-body-m-font)',
+              fontSize: 'var(--typography-body-m-size)',
+              fontWeight: 'var(--typography-weight-medium)',
             }}
           >
             Text link trigger

@@ -32,7 +32,7 @@
 .variant-media {
   height: 57px;
   padding-block: var(--size-padding-padding-xs); /* 8px */
-  align-items: flex-start;
+  align-items: center;
 }
 
 .icon,
@@ -41,7 +41,6 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  padding-top: 3px;
   color: var(--color-icon-icon-subtle);
 }
 
@@ -96,8 +95,6 @@
 
 .badge {
   flex-shrink: 0;
-  padding-top: 3px;
-  align-self: flex-start;
 }
 
 .delimiter {

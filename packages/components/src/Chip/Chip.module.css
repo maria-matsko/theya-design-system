@@ -19,8 +19,7 @@
 
 .clickable {
   border: none;
-  font: inherit;
-  letter-spacing: inherit;
+  background: none;
   cursor: pointer;
   transition: filter 100ms ease, box-shadow 100ms ease;
 }
@@ -114,7 +113,7 @@
   border: 1px solid;
 }
 .type-outlined.intent-inactive {
-  border-color: var(--color-border-border);
+  border-color: var(--color-border-border-subtle);
   color: var(--color-text-text);
 }
 .type-outlined.intent-info {

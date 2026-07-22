@@ -25,11 +25,11 @@
 .label {
   display: inline-flex;
   align-items: flex-start;
-  font-family: var(--typography-body-l-font);
-  font-weight: var(--typography-body-l-weight);
-  font-size: var(--typography-body-l-size);
-  line-height: var(--typography-body-l-line-height);
-  letter-spacing: var(--typography-body-l-letter-spacing);
+  font-family: var(--typography-body-m-font);
+  font-weight: var(--typography-body-m-weight);
+  font-size: var(--typography-body-m-size);
+  line-height: var(--typography-body-m-line-height);
+  letter-spacing: var(--typography-body-m-letter-spacing);
   color: var(--color-text-text);
 }
 
@@ -52,11 +52,11 @@
   align-items: center;
   gap: var(--size-margin-margin-xs); /* 8px */
   cursor: pointer;
-  font-family: var(--typography-body-l-font);
-  font-weight: var(--typography-body-l-weight);
-  font-size: var(--typography-body-l-size);
-  line-height: var(--typography-body-l-line-height);
-  letter-spacing: var(--typography-body-l-letter-spacing);
+  font-family: var(--typography-body-m-font);
+  font-weight: var(--typography-body-m-weight);
+  font-size: var(--typography-body-m-size);
+  line-height: var(--typography-body-m-line-height);
+  letter-spacing: var(--typography-body-m-letter-spacing);
   text-align: left;
   transition:
     background-color 120ms ease,
@@ -228,10 +228,10 @@
 .option {
   padding: 8px 12px;
   border-radius: var(--size-border-radius-border-radius-md);
-  font-family: var(--typography-body-l-font);
-  font-weight: var(--typography-body-l-weight);
-  font-size: var(--typography-body-l-size);
-  line-height: var(--typography-body-l-line-height);
+  font-family: var(--typography-body-m-font);
+  font-weight: var(--typography-body-m-weight);
+  font-size: var(--typography-body-m-size);
+  line-height: var(--typography-body-m-line-height);
   color: var(--color-text-text);
   cursor: pointer;
 }

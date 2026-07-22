@@ -32,7 +32,7 @@ export function NavGroup({ label, children, defaultOpen = true, collapsed }: Nav
         <span className={styles.headerLabel}>{label}</span>
         <Icon
           name="caret-down"
-          size={12}
+          size={16}
           style={{ transform: open ? 'rotate(180deg)' : undefined, transition: 'transform 150ms ease' }}
         />
       </button>

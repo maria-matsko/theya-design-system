@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { MenuItem } from './MenuItem';
 import { Icon } from '@theya/icons';
+import rocketIcon from '../assets/rocket.svg';
 
 const meta: Meta<typeof MenuItem> = {
   title: 'Components/MenuItem',
@@ -45,9 +46,9 @@ export const Status: Story = {
 export const Media: Story = {
   args: {
     variant: 'media',
-    text: 'First custom option',
-    description: 'Custom option description',
-    mediaIcon: <Icon name="lightning" variant="solid" size={32} />,
+    text: 'Rockets',
+    description: 'Launch something new',
+    mediaIcon: <img src={rocketIcon} alt="" width={32} height={32} />,
   },
   render: (args) => (
     <div style={{ width: 266 }}>

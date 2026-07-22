@@ -67,7 +67,7 @@ export const Disabled: Story = {
 
 export const LabelPosition: Story = {
   render: (args) => (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 24, height: 320, alignItems: 'flex-start' }}>
       <Select {...args} labelPosition="top" label="Label on top (default)" />
       <Select {...args} labelPosition="left" label="Label on the left" />
     </div>

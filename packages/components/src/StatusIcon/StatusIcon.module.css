@@ -12,15 +12,16 @@
   color: var(--color-icon-icon-on-dark);
 }
 
-.status-exclamation,
 .status-cross {
   background-color: var(--color-bg-danger-bg-danger);
   color: var(--color-icon-icon-on-dark);
 }
 
-.status-warning {
-  background-color: var(--color-bg-warning-bg-warning);
-  color: var(--color-icon-icon-on-dark);
+.shapeIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .status-progressing {

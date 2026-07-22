@@ -58,8 +58,8 @@ export const RingWithStepCounter: Story = {
       size="md"
       centerContent={
         <>
-          <div style={{ fontSize: 10, color: 'var(--color-text-text-subtle)' }}>Status</div>
-          <div style={{ fontSize: 12, color: 'var(--color-text-text)' }}>1 of 4</div>
+          <div style={{ fontFamily: 'var(--typography-body-xs-font)', fontSize: 10, color: 'var(--color-text-text-subtle)' }}>Status</div>
+          <div style={{ fontFamily: 'var(--typography-body-s-font)', fontSize: 12, color: 'var(--color-text-text)' }}>1 of 4</div>
         </>
       }
     />

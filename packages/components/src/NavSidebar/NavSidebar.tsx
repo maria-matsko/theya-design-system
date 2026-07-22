@@ -17,6 +17,8 @@ const THEME_VARS: Record<NavSidebarTheme, CSSProperties> = {
     ['--theya-nav-bg-hover' as string]: 'var(--color-bg-secondary-bg-secondary-subtle-hover)',
     ['--theya-nav-bg-active' as string]: 'var(--color-bg-secondary-bg-secondary-subtle)',
     ['--theya-nav-border' as string]: 'var(--color-border-border-subtle)',
+    ['--theya-nav-badge-bg' as string]: 'var(--color-bg-secondary-bg-secondary-subtle)',
+    ['--theya-nav-badge-text' as string]: 'var(--color-text-text-subtler)',
   },
   dark: {
     ['--theya-nav-bg' as string]: 'var(--color-bg-layout-bg-sidebar)',
@@ -24,6 +26,8 @@ const THEME_VARS: Record<NavSidebarTheme, CSSProperties> = {
     ['--theya-nav-text-active' as string]: 'var(--color-text-text-on-dark)',
     ['--theya-nav-text-subtle' as string]: 'var(--color-text-text-subtle-on-dark)',
     ['--theya-nav-bg-hover' as string]: 'var(--color-bg-layout-bg-sidebar-section)',
+    ['--theya-nav-badge-bg' as string]: 'var(--color-bg-layout-bg-sidebar-section)',
+    ['--theya-nav-badge-text' as string]: 'var(--color-text-text-on-dark)',
     ['--theya-nav-bg-active' as string]: 'var(--color-bg-layout-bg-sidebar-selected)',
     ['--theya-nav-border' as string]: 'var(--color-bg-layout-bg-sidebar-section)',
   },

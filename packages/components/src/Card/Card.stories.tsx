@@ -14,6 +14,7 @@ import manPhoto1 from '../assets/avatars/man-1.jpg';
 import manPhoto2 from '../assets/avatars/man-2.jpg';
 import { Icon } from '@theya/icons';
 import novaWeb from '../assets/nova-web.jpg';
+import { LineChart } from '../Chart/LineChart';
 
 const meta: Meta<typeof Card> = {
   title: 'Components/Card',
@@ -59,13 +60,24 @@ export const WithTopRowControls: Story = {
   render: () => (
     <Card
       topLeft={
-        <div style={{ width: 32, height: 32, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <Icon name="lightning" variant="solid" size={24} />
+        <div
+          style={{
+            width: 32,
+            height: 32,
+            borderRadius: 4,
+            background: 'var(--color-bg-primary-bg-primary-subtle)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: 'var(--color-icon-icon-primary)',
+          }}
+        >
+          <Icon name="star" variant="solid" size={20} />
         </div>
       }
       topRight={
         <>
-          <IconButton icon={<Icon name="settings" size={16} />} aria-label="Settings" size="sm" type="ghost" />
+          <IconButton icon={<Icon name="settings" size={16} />} aria-label="Settings" size="md" type="ghost" />
           <Switch defaultChecked />
         </>
       }
@@ -173,8 +185,8 @@ export const CustomWidth: Story = {
       }
       actions={
         <>
-          <IconButton icon={<Icon name="star" size={16} />} aria-label="Star" size="sm" type="ghost" />
-          <IconButton icon={<Icon name="settings" size={16} />} aria-label="Settings" size="sm" type="ghost" />
+          <IconButton icon={<Icon name="star" size={16} />} aria-label="Star" size="md" type="ghost" />
+          <IconButton icon={<Icon name="settings" size={16} />} aria-label="Settings" size="md" type="ghost" />
         </>
       }
     />
@@ -196,14 +208,14 @@ export const IconChipWithAvatarsAndButton: Story = {
             width: 24,
             height: 24,
             borderRadius: 4,
-            background: 'var(--color-bg-primary-bg-primary)',
+            background: 'var(--color-bg-primary-bg-primary-subtle)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            color: 'var(--color-icon-icon-on-dark)',
+            color: 'var(--color-icon-icon-primary)',
           }}
         >
-          <Icon name="lightning" variant="solid" size={16} />
+          <Icon name="star" variant="solid" size={16} />
         </div>
       }
       title="Team workspace"
@@ -217,7 +229,7 @@ export const IconChipWithAvatarsAndButton: Story = {
       }
       description="A shared space for the whole team to collaborate on projects."
       details={
-        <>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 4 }}>
           <AvatarGroup size="sm" max={3}>
             <Avatar variant="image" src={womanPhoto1} />
             <Avatar variant="image" src={manPhoto1} />
@@ -226,8 +238,164 @@ export const IconChipWithAvatarsAndButton: Story = {
           <Button size="sm" type="outlined" intent="secondary">
             Invite
           </Button>
+        </div>
+      }
+    />
+  ),
+};
+
+/** Recreates node 45408-4225 — a small tinted icon chip, title, description. No new capability needed. */
+export const SimpleIconTitleDescription: Story = {
+  render: () => (
+    <Card
+      topLeft={
+        <div
+          style={{
+            width: 24,
+            height: 24,
+            borderRadius: 4,
+            background: 'var(--color-bg-primary-bg-primary-subtle)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: 'var(--color-icon-icon-primary)',
+          }}
+        >
+          <Icon name="star" variant="solid" size={16} />
+        </div>
+      }
+      title="Nova"
+      description="Your AI-powered assistant for everyday tasks."
+    />
+  ),
+};
+
+/** Recreates node 45388-11936 — icon + title + inline status row (rating + separator + copy-count), no media. */
+export const IconWithInlineStatusRow: Story = {
+  render: () => (
+    <Card
+      topLeft={
+        <div
+          style={{
+            width: 24,
+            height: 24,
+            borderRadius: 4,
+            background: 'var(--color-bg-primary-bg-primary-subtle)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: 'var(--color-icon-icon-primary)',
+          }}
+        >
+          <Icon name="star" variant="solid" size={16} />
+        </div>
+      }
+      title="Component library"
+      status={
+        <>
+          <Icon name="star" variant="solid" size={12} />
+          <span>4.8</span>
+          <span>·</span>
+          <Icon name="copy" size={12} />
+          <span>1.2k copies</span>
         </>
       }
+      description="A shared set of reusable UI building blocks for the team."
+    />
+  ),
+};
+
+/** Recreates node 45388-8010 — media + small top logo + description + a details row split between an icon+text on the left and a Chip on the right. */
+export const MediaWithDetailsRowAndChip: Story = {
+  render: () => (
+    <Card
+      media={<img src={novaWeb} alt="" />}
+      topLeft={
+        <div
+          style={{
+            width: 28,
+            height: 28,
+            borderRadius: 4,
+            background: 'var(--color-bg-primary-bg-primary-subtle)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: 'var(--color-icon-icon-primary)',
+          }}
+        >
+          <Icon name="star" variant="solid" size={20} />
+        </div>
+      }
+      title="Nova Web"
+      description="Your new dashboard for managing everything in one place."
+      details={
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+            <Icon name="wallet" size={12} />
+            <span>$12,400 raised</span>
+          </div>
+          <Chip label="54K" intent="info" type="filled" />
+        </div>
+      }
+    />
+  ),
+};
+
+/** Recreates node 45408-1389 — eyebrow + header with a trailing external-link icon + description + a chart in `content` + a bottom Button. */
+export const StatCardWithChart: Story = {
+  render: () => (
+    <Card
+      width={280}
+      eyebrow={
+        <span
+          style={{
+            fontFamily: 'var(--typography-body-s-font)',
+            fontSize: 'var(--typography-body-s-size)',
+            color: 'var(--color-text-text-subtler)',
+          }}
+        >
+          Net Revenue
+        </span>
+      }
+      title={
+        <span
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 4,
+            fontFamily: 'var(--typography-heading-heading-l-font)',
+            fontWeight: 'var(--typography-weight-medium)',
+            fontSize: 'var(--typography-heading-heading-l-size)',
+            lineHeight: 'var(--typography-heading-heading-l-line-height)',
+            color: 'var(--color-text-text)',
+          }}
+        >
+          +$34.58M
+          <Icon name="arrow-up" size={16} style={{ transform: 'rotate(45deg)', color: 'var(--color-icon-icon-success)' }} />
+        </span>
+      }
+      description="With Nova, every customer idea becomes a site or app in seconds"
+      content={
+        <div style={{ marginTop: 16 }}>
+          <LineChart
+            data={[
+              { x: 1, v: 20 },
+              { x: 2, v: 18 },
+              { x: 3, v: 22 },
+              { x: 4, v: 19 },
+              { x: 5, v: 30 },
+              { x: 6, v: 45 },
+            ]}
+            xKey="x"
+            series={[{ key: 'v', color: 'primary' }]}
+            variant="area"
+            height={100}
+            showGrid={false}
+            showYAxis={false}
+          />
+        </div>
+      }
+      actions={<Button size="sm">Label</Button>}
     />
   ),
 };

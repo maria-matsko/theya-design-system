@@ -110,11 +110,11 @@
 }
 
 .labelText {
-  font-family: var(--typography-body-l-font);
-  font-weight: var(--typography-body-l-weight);
-  font-size: var(--typography-body-l-size);
-  line-height: var(--typography-body-l-line-height);
-  letter-spacing: var(--typography-body-l-letter-spacing);
+  font-family: var(--typography-body-m-font);
+  font-weight: var(--typography-body-m-weight);
+  font-size: var(--typography-body-m-size);
+  line-height: var(--typography-body-m-line-height);
+  letter-spacing: var(--typography-body-m-letter-spacing);
   color: var(--color-text-text);
 }
 .input:disabled ~ .labelText {

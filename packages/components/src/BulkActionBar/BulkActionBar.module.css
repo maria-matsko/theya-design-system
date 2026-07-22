@@ -58,13 +58,14 @@
   font-family: var(--typography-body-m-font);
   font-weight: var(--typography-weight-medium);
   font-size: var(--typography-body-m-size);
-  color: var(--color-text-text-subtle-on-dark);
+  color: var(--color-text-text-on-dark);
+  opacity: 0.92;
   white-space: nowrap;
   cursor: pointer;
 }
 .action:hover {
+  opacity: 1;
   background-color: rgba(255, 255, 255, 0.12);
-  color: var(--color-text-text-on-dark);
 }
 
 .destructive:hover {
@@ -99,8 +100,8 @@
 
 .overflowMenu {
   position: absolute;
-  bottom: 100%;
+  top: 100%;
   right: 0;
-  margin-bottom: 8px;
+  margin-top: 8px;
   z-index: 10;
 }

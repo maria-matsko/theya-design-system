@@ -119,7 +119,7 @@ export const Password = forwardRef<HTMLInputElement, PasswordProps>(
               aria-label={visible ? 'Hide password' : 'Show password'}
               tabIndex={-1}
             >
-              <Icon name={visible ? 'eye-closed' : 'eye'} size={16} />
+              <Icon name={visible ? 'eye' : 'eye-closed'} size={16} />
             </button>
           </div>
           {showStrength ? (

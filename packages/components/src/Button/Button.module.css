@@ -270,7 +270,7 @@
 /* Secondary has no dedicated border/icon token family — uses the
    generic neutral ones, matching how it's handled elsewhere. */
 .type-outlined.intent-secondary {
-  border-color: var(--color-border-border);
+  border-color: var(--color-border-border-subtle);
 }
 .type-outlined.intent-secondary .icon {
   color: var(--color-icon-icon);

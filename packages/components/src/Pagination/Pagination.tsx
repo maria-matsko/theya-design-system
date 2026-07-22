@@ -57,7 +57,7 @@ export function Pagination({
             icon={<Icon name="skip-prev" size={16} />}
             aria-label="First page"
             type="ghost"
-            size="sm"
+            size="md"
             disabled={page <= 1}
             onClick={() => onPageChange(1)}
           />
@@ -66,7 +66,7 @@ export function Pagination({
           icon={<Icon name="caret-left" size={16} />}
           aria-label="Previous page"
           type="ghost"
-          size="sm"
+          size="md"
           disabled={page <= 1}
           onClick={() => onPageChange(page - 1)}
         />
@@ -91,7 +91,7 @@ export function Pagination({
           icon={<Icon name="caret-right" size={16} />}
           aria-label="Next page"
           type="ghost"
-          size="sm"
+          size="md"
           disabled={page >= totalPages}
           onClick={() => onPageChange(page + 1)}
         />
@@ -100,7 +100,7 @@ export function Pagination({
             icon={<Icon name="skip-next" size={16} />}
             aria-label="Last page"
             type="ghost"
-            size="sm"
+            size="md"
             disabled={page >= totalPages}
             onClick={() => onPageChange(totalPages)}
           />

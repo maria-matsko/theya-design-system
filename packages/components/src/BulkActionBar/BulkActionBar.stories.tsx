@@ -40,4 +40,9 @@ export const WithOverflow: Story = {
       { key: 'remove', label: 'Remove', onClick: () => {}, destructive: true },
     ],
   },
+  render: (args) => (
+    <div style={{ height: 220 }}>
+      <BulkActionBar {...args} />
+    </div>
+  ),
 };
